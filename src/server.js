@@ -5,7 +5,8 @@ const app = express();
 
 const defaultRes = (req, res) => {
     res.send(
-        `<h1>Home</h1><br>
+        `<h1>Home</h1>
+        <br>
         <ul>
             <li><a href='http://localhost:3000/api/games'>Ver todos os jogos</a></li>
         </ul>`

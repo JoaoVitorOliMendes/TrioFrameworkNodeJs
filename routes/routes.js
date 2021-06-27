@@ -1,9 +1,11 @@
+// INTANCIA O ROUTER, EXPRESS, GAMESHANDLER, E DEFAULTRESPONSES
 const { Router } = require('express')
 const express = require('express')
 const gamesHandler = require('../handler/gamesHandler')
 const defRes = require('../defaultResponses/defResponses')
 
 
+// CRIA NOVAS ROTAS
 const router = Router()
 .get('/games', gamesHandler.getAllGames)
 .get('/games/:id', gamesHandler.getGameById)
